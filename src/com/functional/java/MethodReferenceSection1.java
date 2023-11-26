@@ -39,8 +39,8 @@ public class MethodReferenceSection1 {
 		// 클래스의 static method를 지정할 때	
 		System.out.println("calculate(8, 5, MethodReferenceSection1::multiply) : " +calculate(8, 5, MethodReferenceSection1::multiply));
 		
-		// 3. ClassName::instanceMethodName
-		// 객체의 instance method를 지정할 때
+		// 2. objectName::instanceMethodName
+		// 선언된 객체의 instance method를 지정할 때
 		System.out.println("calculate(8, 5, new MethodReferenceSection1()::subtract) : " +calculate(8, 5, new MethodReferenceSection1()::subtract));
 		
 		new MethodReferenceSection1().myWrappingMethod();
