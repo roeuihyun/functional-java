@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.BiPredicate;
 import java.util.function.Function;
 
-import com.functional.java.model.User;
+import com.functional.java.model.OldUser;
 
 public class MethodReferenceSection2 {
 
@@ -31,23 +31,23 @@ public class MethodReferenceSection2 {
 		BiPredicate<String,String> strEquals = String::equals;
 		System.out.println("strEquals.test(\"hello\", \"world\") : " + strEquals.test("hello", "world"));
 		
-		List<User> users = new ArrayList<User>();
-		users.add(new User(5,"Alice"));
-		users.add(new User(3,"Rachel"));
-		users.add(new User(1,"Charlie"));
-		users.add(new User(7,"Bob"));
+		List<OldUser> OldUsers = new ArrayList<OldUser>();
+		OldUsers.add(new OldUser(5,"Alice"));
+		OldUsers.add(new OldUser(3,"Rachel"));
+		OldUsers.add(new OldUser(1,"Charlie"));
+		OldUsers.add(new OldUser(7,"Bob"));
 		
-		Function<User,Object> getterId = User::getId;
-		printUserField(users,getterId);
+		Function<OldUser,Object> getterId = OldUser::getId;
+		printOldUserField(OldUsers,getterId);
 		
-		Function<User,Object> getterName = User::getName;
-		printUserField(users,getterName);
+		Function<OldUser,Object> getterName = OldUser::getName;
+		printOldUserField(OldUsers,getterName);
 
 	}
 	
-	private static void printUserField(List<User> users, Function<User,Object> getter) {
-		for(User user : users) {
-			System.out.println("getter.apply(user) : " + getter.apply(user));
+	private static void printOldUserField(List<OldUser> OldUsers, Function<OldUser,Object> getter) {
+		for(OldUser OldUser : OldUsers) {
+			System.out.println("getter.apply(OldUser) : " + getter.apply(OldUser));
 		}
 	}
 

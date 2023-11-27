@@ -9,7 +9,7 @@ import java.util.function.BiFunction;
 import com.functional.java.model.Car;
 import com.functional.java.model.Sedan;
 import com.functional.java.model.Suv;
-import com.functional.java.model.User;
+import com.functional.java.model.OldUser;
 import com.functional.java.model.Van;
 
 public class MethodReferenceSection3 {
@@ -23,10 +23,11 @@ public class MethodReferenceSection3 {
 		// 객체의 instance method를 지정할 때
 		// 4. ClassName::new
 		// 클래스의 constructor를 지정할 때
-		User user1 = new User(1,"Alice");
-		BiFunction<Integer,String,User> userCreator = User::new;
-		User user3 = userCreator.apply(3, "Bob");
-		System.out.println(user3);
+		OldUser OldUser1 = new OldUser(1,"Alice");
+		System.out.println(OldUser1);
+		BiFunction<Integer,String,OldUser> OldUserCreator = OldUser::new;
+		OldUser OldUser3 = OldUserCreator.apply(3, "Bob");
+		System.out.println(OldUser3);
 		
 		String[][] inputs = new String[][] {
 			{"Sedan","Sonata","Hyundai"}
