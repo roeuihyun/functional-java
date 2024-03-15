@@ -13,7 +13,7 @@ public class StreamSection2 {
 
 	public static void main(String[] args) {
 		
-		// 만족하는 데이터만 걸러내는데 사
+		// 만족하는 데이터만 걸러내는데 사용
 		// predicate 를 통해서 true 를 반환하는 데이터만 stream 으로 return
 		// Stream<T> filter(Predicate<? super T> predicate);
 		Stream<Integer> numberStream = Stream.of(-9,-7,-5,-3,-1,0,1,3,5,7,9);
