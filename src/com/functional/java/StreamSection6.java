@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.functional.java.model.Order;
-import com.functional.java.model.User;
 import com.functional.java.model.Order.OrderStatus;
 
 public class StreamSection6 {
