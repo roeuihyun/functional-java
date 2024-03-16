@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 import com.functional.java.model.Order;
 import com.functional.java.model.OrderLine;
 import com.functional.java.model.OrderLine.OrderLineType;
@@ -23,6 +24,7 @@ public class StreamSection7 {
 		Stream<String[]> cityStream = Arrays.stream(cities);
 		Stream<Stream<String>> cityStreamStream = cityStream.map(x-> Arrays.stream(x));
 		List<Stream<String>> cityStreamList = cityStreamStream.collect(Collectors.toList());
+		System.out.println(cityStreamList);
 		
 		Stream<String[]> cityStream2 = Arrays.stream(cities);
 		Stream<String> flattenedCityStream = cityStream2.flatMap(x->Arrays.stream(x));
