@@ -1,6 +1,7 @@
 package com.functional.java.model;
 
 import java.util.List;
+import java.util.Optional;
 
 public class User {
 
@@ -9,6 +10,7 @@ public class User {
 	private String emailAddress;
 	private boolean isVerified;
 	private List<Integer> friendUserId;
+	private String flatMapEmailAddress;
 	
 	public int getId() {
 		return id;
@@ -34,6 +36,15 @@ public class User {
 	
 	public User setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
+		return this;
+	}
+	
+	public Optional<String> getFlatMapEmailAddress() {
+		return Optional.ofNullable(flatMapEmailAddress);
+	}
+	
+	public User setFlatMapEmailAddress(String flatMapEmailAddress) {
+		this.flatMapEmailAddress = flatMapEmailAddress;
 		return this;
 	}
 	

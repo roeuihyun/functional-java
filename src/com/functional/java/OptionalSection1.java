@@ -8,19 +8,19 @@ public class OptionalSection1 {
 	
 	public static void main(String[] args) {
 		
-		User user1 = new User()
-				.setId(101)
-				.setName("Alice")
+//		User user1 = new User()
+//				.setId(101)
+//				.setName("Alice")
+////				.setEmailAddress("alice@gmail.com")
+//				.setVerified(true)
+//				;
+//
+//		User user2 = new User()
+//				.setId(101)
+//				.setName("Alice")
 //				.setEmailAddress("alice@gmail.com")
-				.setVerified(true)
-				;
-
-		User user2 = new User()
-				.setId(101)
-				.setName("Alice")
-				.setEmailAddress("alice@gmail.com")
-				.setVerified(true)
-				;
+//				.setVerified(true)
+//				;
 //		System.out.println(userEquals(user1, user2));
 		
 		String someEmail = "some@email.com";
