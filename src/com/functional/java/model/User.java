@@ -1,5 +1,6 @@
 package com.functional.java.model;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -11,6 +12,7 @@ public class User {
 	private boolean isVerified;
 	private List<Integer> friendUserId;
 	private String flatMapEmailAddress;
+	private LocalDateTime createdAt;
 	
 	public int getId() {
 		return id;
@@ -63,6 +65,15 @@ public class User {
 	
 	public User setFriendUserId(List<Integer> friendUserId) {
 		this.friendUserId = friendUserId;
+		return this;
+	}
+	
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+
+	public User setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
 		return this;
 	}
 
