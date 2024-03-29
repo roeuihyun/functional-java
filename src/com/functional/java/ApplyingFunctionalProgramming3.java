@@ -18,7 +18,7 @@ public class ApplyingFunctionalProgramming3 {
 		Function<Integer, Integer> addTen = x -> x + 10;
 		
 		Function<Integer,Integer> composedFunction = multiplyByTwo.andThen(addTen);
-		System.out.println("comp osedFunction.apply(3) : " + composedFunction.apply(3));
+		System.out.println("composedFunction.apply(3) : " + composedFunction.apply(3));
 		
 		Order upprocessedOrder = new Order()
 				.setId(1001L)
