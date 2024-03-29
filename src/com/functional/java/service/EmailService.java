@@ -11,5 +11,9 @@ public class EmailService {
 	public void sendMakeMoreFriendsEmail(User user) {
 		System.out.println("Please Make More Friends email to : " + user.getEmailAddress());
 	}
+	
+	public void sendVerifyYourEmailEmail(User user) {
+		System.out.println("Please Verify your email to : " + user.getEmailAddress());
+	}
 
 }
