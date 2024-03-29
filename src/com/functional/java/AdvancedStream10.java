@@ -3,7 +3,6 @@ package com.functional.java;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 import com.functional.java.model.User;
 import com.functional.java.service.EmailService;
